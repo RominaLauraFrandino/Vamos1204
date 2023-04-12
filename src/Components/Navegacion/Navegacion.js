@@ -2,27 +2,24 @@ import {Link} from"react-router-dom";
 import './Navegacion.css';
 export default function Navegacion() {
     return(
-        <header className="style">
-            <nav className='navbar navbar-expand-lg  w-100 bg-blue'>
+        <header className="style">            
+            <nav className='navbar navbar-expand-lg  w-100 '>
                 <div className='container-fluid'>
-  
-                    <Link to="/"className='nav-link tamano' aria-current="page" >Rick & Morty</Link> 
-                    <ul className='navbar-nav nav-pills'>
-                        <li className='nav-item'>
+                <Link to="/"className='nav-link tamano' aria-current="page" >Instituto Superior Villa del Rosario</Link> 
+                    <ul className='navbar-list'>
+                        <li className='navbar-item'>
                             
                             <Link to="/"className='nav-link boton' aria-current="page" >Home</Link> 
                         </li>
-                        <li className='nav-item'>
-                            
-                            <Link to="/characters"className='nav-link boton' aria-current="page" >Characters</Link> 
-                        </li>
+                        
                         <li className='nav-item'>
                         
-                        <Link to="/Contact"className='nav-link boton' aria-current="page" >Contact</Link> 
+                        <Link to="/login"className='nav-link boton' aria-current="page" >Login</Link> 
                         </li>
                     </ul>
+               
                 </div>
-            </nav>
+</nav>
         </header>
             )
 }

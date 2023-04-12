@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(../public/imagenes/rickymorty.jpeg);
+  background-image: url(../public/imagenes/fondo.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
