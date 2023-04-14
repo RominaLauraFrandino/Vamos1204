@@ -13,14 +13,15 @@ const Login = () => {
       // Lógica para llamar a la API externa y realizar la autenticación
       // Puedes usar fetch o axios para hacer la petición a la API
       // Aquí se muestra un ejemplo básico utilizando fetch
-      const response = await fetch("https://api.example.com/login", {
+      const response = await fetch("http://localhost:3001/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*"
         },
         body: JSON.stringify({ username, password }),
       });
-      if (response.ok) {
+      if (response.status == 200) {
         // Autenticación exitosa, puedes redirigir al usuario a la página de inicio
         console.log("Autenticación exitosa");
       } else {
